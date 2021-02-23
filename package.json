@@ -1,0 +1,23 @@
+{
+  "name": "your-bot",
+  "version": "2.10.0",
+  "description": "Musica Simple",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "author",
+  "license": "MIT",
+  "dependencies": {   
+    "dbd.db": "^1.3.12",
+    "dbd.js": "^2.0.0",
+    "dbd.js-utils": "0.0.4",
+    "discord.js": "^12.5.1",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+    "ytdl-core": "^4.5.0"
+  }
+}
