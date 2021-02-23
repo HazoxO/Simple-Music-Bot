@@ -40,7 +40,7 @@ bot.status({
 
 bot.onMessage() 
 
-module.exports = ({
+bot.command({
 
 name: "play",
 
