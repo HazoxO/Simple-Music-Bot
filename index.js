@@ -6,6 +6,17 @@ const duration1 = `$replaceText[$replaceText[$splitText[3];(;];);]$textSplit[$so
 
 const current1 = `$replaceText[$replaceText[$splitText[3];(;];);]$textSplit[$songInfo[current_duration]; ]`
 
+const express = require('express');
+const app = express();
+
+app.get('/', (req, res) => {
+	res.send('Hello Express!');
+});
+
+app.listen(3000, () => {
+	console.log('El bot a sido conectado!');
+});
+
 const dbdjs = require("dbd.js");
 
 const bot = new dbdjs.Bot({
