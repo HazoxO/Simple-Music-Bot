@@ -133,6 +133,17 @@ bot.command({
 })
 
 bot.command({
+  name: "stop",
+  code: `
+  $onlyIf[$voiceID!=;{color:RED}{description: <:PeligroxX:785381669648597085> Favor Unete A Un Canal De Voz Primero.}]
+$description[:Se ha parado la música correctamente.]
+$color[$getRoleColor[$highestRole[$clientID]]]
+$stopSong
+$suppressErrors
+`
+})
+
+bot.command({
   name: "help",
   code: `
 $title[Comandos de <@$clientID>]
@@ -145,8 +156,8 @@ $description[**Bienvenido a help!**
 \`volume\` - sube o baja el volumen de tu canción.
 \`np\` - puedes ver en que minuto esta tu canción.
 
-*Servidor de soporte*
-[dudas o quejas](https://discord.gg/4xCjYzypww)] 
+**Servidor de soporte**
+[dudas o quejas\\](https://discord.gg/4xCjYzypww)] 
 $footer[Requested By $username[$authorID];$authorAvatar]
 $color[RANDOM]
 `
